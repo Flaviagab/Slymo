@@ -2,11 +2,48 @@
     margin: 0;
 }
 
-
 .fonte {
-        font-family: "Comfortaa", sans-serif;
+        font-family: "Comfortaa", sans-serif, Arial;
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
   }
-  
+
+  header {
+    width: 100%;
+    background-color: black;
+    padding: 5px;
+    box-sizing: border-box;
+
+    nav {
+        float: right;
+    }
+
+    ul{
+        list-style: none;
+
+        li {
+            display: inline-block;
+            text-transform: uppercase;
+            margin: 15px;
+
+
+            a {
+                color: white;
+                text-decoration: none;
+                transition: 0.5s all;
+            }
+
+
+            a:hover {
+                color: rgb(0, 255, 17);
+            }
+
+    }
+  }
+}
+
+body {
+    background-color: #0B130B;
+    color: white;
+}
