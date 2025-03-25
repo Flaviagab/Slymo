@@ -17,7 +17,7 @@
 
     nav {
         float: right;
-        margin-top: 20px;
+        margin-top: 10px;
 
         ul{
             list-style: none;
@@ -43,30 +43,39 @@
     }
     }
 
+    main {
+        float: right;
+
+        h1 {
+            text-transform: uppercase;
+        }
+    }
+
 body {
     background-color: #062a0e;
     color: white;
 }
 
-#btnjogar {
-    border: 5px;
+.btnjogar {
+    border: 1px solid white;
         border-radius: 5px;
         background-color: #037128;
         padding: 13px 20px;
 }
 
-#btnjogar:hover {
-    color: #27f06a;
+.btnjogar:hover {
+    color: rgb(0, 255, 17);
     background-color: #0c391b;
+    border: 1px solid rgb(0, 255, 17);
      }
 
-#btncontato {
+.btncontato {
     border: 1px solid white;
     border-radius: 5px;
     padding: 10px;
 }
 
-#btncontato:hover {
+.btncontato:hover {
     color: rgb(0, 255, 17);
     border: 1px solid rgb(0, 255, 17);
 }
