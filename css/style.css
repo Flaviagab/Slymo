@@ -11,6 +11,7 @@
 
   header {
     width: 100%;
+    height: 145px;
     background-color: black;
     padding: 5px;
     box-sizing: border-box;
@@ -43,14 +44,6 @@
     }
     }
 
-    main {
-        float: right;
-
-        h1 {
-            text-transform: uppercase;
-        }
-    }
-
 body {
     background-color: #062a0e;
     color: white;
@@ -78,5 +71,49 @@ body {
 .btncontato:hover {
     color: rgb(0, 255, 17);
     border: 1px solid rgb(0, 255, 17);
+}
+
+.btnsaibamais {
+    border: 1px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.5s all;
+}
+
+.btnsaibamais:hover {
+    color: rgb(0, 255, 17);
+    border: 1px solid rgb(0, 255, 17);
+}
+
+main {
+    text-align: justify;
+    display: flex;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+
+   .conteudo1 {
+    margin: 70px 50px 10px 7px;
+
+    h1 {
+        text-transform: uppercase;
+        text-align: left;
+    }
+   
+     }
+
+.banner {
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 50px;
+    box-shadow: 0px 0px 15px rgb(120, 249, 129);
+    
+    
+}
+
 }
 
