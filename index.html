@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2e7313998e.js" crossorigin="anonymous"></script>
 
     <link href="img/Jogoicon.png" rel="shortcut icon">
 
@@ -17,8 +18,13 @@
 <body class="fonte">
     <header>
         <a href="index.html" title="Página inicial">
-            <img src="img/Slymo.jpg" alt="Logo do Fames" title="Página inicial" width="244" height="140">
+            <img src="img/Slymo.jpg" alt="Logo do site" title="Página inicial" width="244" height="140">
         </a>
+
+        <a href="javascript:mostrarmenu()" class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+
         <nav>
             <ul>
                 <li>
@@ -62,7 +68,7 @@
             </div>
         </section>
 
-        <section id="saibasobre">
+        <section id="saibasobre" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <h2>Um pouco mais da história</h2>
             <p>Slymo é um slime curioso e faminto, mas que não se contenta com qualquer lanche, ele deseja as frutas raras e suculentas que crescem em lugares desconhecidos. O problema? Essas frutas são protegidas por cogumelos guardiões que juraram impedir qualquer um de roubá-las. Dizem que as frutas são as melhores do universo, e os cogumelos não deixarão Slymo pegá-las sem uma boa luta! Ajude Slymo a saltar pelos blocos, escapar dos perigos e coletar moedas pelo caminho. Se conseguir vencer os desafios e capturar todas as três frutas raras, ele finalmente saciará sua fome. <br><br>
             Está pronto para essa aventura saltitante?</p>
@@ -71,10 +77,26 @@
         
     </main>
     <footer>
-        <img src="img/Slymo.jpg" alt="Logo do Fames" title="Página inicial" width="244" height="140">
         <p>
-            Desenvolvido por Flávia Gabriella
+            Desenvolvido por Flávia Gabriella - Todos os Direitos Reservados
+        </p>
+        <p>
+            <a href="https://instagram.com" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com" title="Twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
         </p>
     </footer>
+
+    <script>
+        function mostrarmenu() {
+             $(".header-nav").toggle();
+        }
+    </script>
+     <script>
+        AOS.init();
+      </script>
 </body>
 </html>

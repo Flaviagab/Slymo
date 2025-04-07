@@ -15,10 +15,12 @@
     background-color: black;
     padding: 5px;
     box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
 
     nav {
         float: right;
-        margin-top: 10px;
 
         ul{
             list-style: none;
@@ -47,12 +49,13 @@
 body {
     background-color: #062a0e;
     color: white;
+    margin-top: 200px;
 }
 
 .btnjogar {
         border-radius: 5px;
         background-color: #037128;
-        padding: 13px 20px;
+        padding: 15px 20px;
         color: white;
         text-decoration: none;
         transition: 0.5s all;
@@ -67,7 +70,7 @@ body {
 .btncontato {
     border: 1px solid white;
     border-radius: 5px;
-    padding: 10px;
+    padding: 15px 20px;
 }
 
 .btncontato:hover {
@@ -84,7 +87,7 @@ main {
         display: grid;
         grid-template-columns: 50% 50%;
         align-items: center;
-        margin-top: 60px;
+        margin-top: 90px;
         margin-bottom: 100px;
         .coluna {
             img {
@@ -117,13 +120,14 @@ main {
         }
 
         #saibasobre {
-            background-color: rgb(32, 45, 32);
+            background-color: rgb(38, 54, 38);
             padding: 60px;
             border-radius: 10px;
             flex-direction: column;
             align-items: center;
             text-align: center;
             margin-bottom: 50px;
+            margin-top: 150px;
             h2 {
                 text-transform: uppercase;
                 text-align: center;
@@ -136,25 +140,77 @@ main {
             
         }
         #saibasobre a {
-            padding: 10px 20px;
+            padding: 15px 20px;
             text-decoration: none;
             border-radius: 5px;
-            font-weight: bold;
         }
 }
 
 footer {
     background-color: black;
+    padding: 45px 0;
+    width: 100%;
     p {
         text-align: center;
     }
+    a {
+        background-color: white;
+        text-decoration: none;
+        margin: 15px;
+        color: black;
+        border-radius: 100px;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        line-height: 50px;
+        transition: all 0.5s;
+        font-size: 30px;
+    }
+    a:hover {
+        color: white;
+        background-color: #037128;
+    }
 }
 
+.menu {
+    display: none;
+}
+.mostrar {
+    display: block;
+}
 
 @media(max-width: 800px) {
     
 }
 
 @media(max-width: 450px) {
-    
+    main {
+        width: 100%;
+    }
+    .banner{
+        display: none;
+    }
+    .menu {
+        display: block;
+        padding: 10px 15px;
+        border: 1px solid white;
+        color: white;
+        float: right;
+        margin-top: 50px;
+        border-radius: 5px;
+    }
+    header {
+        nav {
+            display: none;
+            ul {
+                display: block;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                li {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
