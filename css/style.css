@@ -81,7 +81,7 @@ body {
 
 
 main {
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
     .tabela {
         display: grid;
