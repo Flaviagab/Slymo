@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2e7313998e.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/bb765b26c7ce04218d381d3bfc0f4ad7?family=Westway+W00+Westbound" rel="stylesheet">
+    
 
     <link href="img/Jogoicon.png" rel="shortcut icon">
 
@@ -18,15 +21,15 @@
 </head>
 <body class="fonte">
     <header>
-        <a href="index.html" title="Página inicial">
-            <img src="img/Slymo.jpg" alt="Logo do site" title="Página inicial" width="244" height="140">
+        <a href="index.html" title="Página inicial" class="fontelogo">
+            slymo
         </a>
 
         <a href="javascript:mostrarmenu()" class="menu">
             <i class="fa-solid fa-bars"></i>
         </a>
 
-        <nav>
+        <nav class="header-nav">
             <ul>
                 <li>
                     <a href="index.html" title="Home">Home</a>
@@ -47,6 +50,7 @@
                 <li>
                    <a href="jogar.html" title="Jogar" class="btnjogar">Jogar</a>
                 </li>
+
             </ul>
         </nav>
      
@@ -59,7 +63,7 @@
         <h2>
             <ul>
                 <li>
-                    Imagens da fase
+                    Imagens das fases
                 </li>
             </ul>
         </h2>
@@ -69,6 +73,16 @@
             <img src="img/imagem4.png" alt="Terceira imagem apresentando o jogo">
             <img src="img/imagem5.png" alt="Quarta imagem apresentando o jogo">
         </div>
+        <h2>
+            <ul>
+                <li>
+                    Itens do jogo
+                </li>
+            </ul>
+        </h2>
+        <div class="fotos">
+
+        </div>
     </main>
     
     <footer>
@@ -76,20 +90,24 @@
             Desenvolvido por Flávia Gabriella - Todos os Direitos Reservados
         </p>
         <p>
-            <a href="https://instagram.com" title="Instagram">
+            <a href="https://instagram.com" target="_blank" title="Instagram">
                 <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="https://twitter.com" title="Twitter">
+            <a href="https://twitter.com" target="_blank" title="Twitter">
                 <i class="fa-brands fa-twitter"></i>
             </a>
         </p>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
         function mostrarmenu() {
-             $(".mostrar").toggle();
+             $(".header-nav").toggle("mostrar");
         }
     </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
      <script>
         AOS.init();
       </script>

@@ -3,7 +3,7 @@ h1 {
     }
 
 .conteudosobre {
-        background-color: rgb(4, 62, 56);
+        background-color: rgb(38, 54, 38);
         padding: 20px;
         border-radius: 5px;
         margin: 50px;
@@ -13,8 +13,7 @@ h1 {
     display: grid;
     grid-template-columns: 50% 50%;
     img {
-        border: 1px solid white;
-        border-radius: 5px;
+        border-radius: 10px;
         width: 70%;
         height: 100%;
     }
