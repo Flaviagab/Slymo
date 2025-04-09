@@ -4,14 +4,20 @@ h1 {
 h2 {
     margin: 20px;
 }
+
+.cormoeda {
+    height: 450px;
+}
+
 .fotos {
-display: grid;
+    display: grid;
     border: 1px solid white;
     border-radius: 10px;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     max-width: 1000px;
     margin: auto;
+    margin-bottom: 60px;
     padding: 20px;
 
     img {
@@ -20,4 +26,24 @@ display: grid;
         border-radius: 10px;
         box-shadow: 0 0 7px rgb(172, 255, 177);
     }
+}
+
+.cormoeda {
+    display: grid;
+    border: 1px solid white;
+    border-radius: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 70px;
+    padding: 20px;
+
+    img {
+        width: 100%;
+        height: 450px;
+        border-radius: 10px;
+        box-shadow: 0 0 7px rgb(172, 255, 177);
+    }
+    
 }

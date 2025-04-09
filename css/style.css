@@ -62,7 +62,7 @@
 body {
     background-color: #062a0e;
     color: white;
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
 .btnjogar {
@@ -166,6 +166,8 @@ footer {
     background-color: black;
     padding: 45px 0;
     width: 100%;
+    position: fixed;
+    bottom: 0;
     p {
         text-align: center;
     }
@@ -275,7 +277,6 @@ footer {
 
     main {
         width: 100%;
-
         .coluna {
             display: grid;
             justify-content: center;
@@ -340,6 +341,9 @@ footer {
     }
 
     header {
+        width: 100%;
+        position: fixed;
+        top: 0;
         display: block;
         justify-content: center;
         align-items: center;
@@ -347,12 +351,32 @@ footer {
         padding: 20px 10px;
     }
 
-    main {
+    footer {
         width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
 
-        .coluna {
-            display: grid;
-            margin: 20px 50px 90px 60px;
-        }
+    main {
+        max-width: 100%; 
+        padding: 10px; 
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        min-height: 100%; 
+        box-sizing: border-box;
+        text-align: center;
+    }
+    
+    body {
+        width: 450px;
+    }
+
+    #conteudobanner, #saibasobre {
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+        box-sizing: border-box; 
     }
 }

@@ -1,0 +1,64 @@
+#jogo {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.titulo-jogo {
+    text-align: center;
+}
+
+.iframe-jogo {
+    align-items: center;
+    width: 100%;
+    height: 550px;
+    margin: 10px;
+    border: none;
+}
+
+.container-botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #037128;
+    padding: 15px 20px;
+    text-align: center;
+    margin: 30px 300px 30px 300px;
+    .botao {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+#msgmobile {
+    display: none;
+}
+
+body {
+    margin-top: 100px;
+}
+
+@media(max-width: 450px){
+    body {
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
+    #jogo{
+        display: none;
+    }
+    #msgmobile {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+}
