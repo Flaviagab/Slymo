@@ -166,8 +166,8 @@ footer {
     background-color: black;
     padding: 45px 0;
     width: 100%;
-    position: fixed;
     bottom: 0;
+    
     p {
         text-align: center;
     }
@@ -360,13 +360,15 @@ footer {
     main {
         max-width: 100%; 
         padding: 10px; 
-        display: flex;
-        flex-direction: column; 
         justify-content: center; 
         align-items: center; 
         min-height: 100%; 
         box-sizing: border-box;
         text-align: center;
+    }
+
+    #saibasobre {
+        display: block;
     }
     
     body {
