@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2e7313998e.js" crossorigin="anonymous"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://db.onlinewebfonts.com/c/bb765b26c7ce04218d381d3bfc0f4ad7?family=Westway+W00+Westbound" rel="stylesheet">
     
 
@@ -57,76 +56,56 @@
     </header>
 
     <main>
-        <h1>
-            Entre em contato!
-        </h1>
-        <form id="form">
-            <label for="">Nome</label>
-            <input type="text" id="nome">
+        <section class="container-central">
+            <h1>
+                Entre em contato!
+            </h1>
+            <form action="" method="POST" id="contact-form">
+                <label for="name">Nome</label>
+                    <input type="text" name="name" class="name" id="name" required>
+                
+                <label for="email">E-mail</label>
+                    <input type="email" name="email" class="email" id="email" required>
+                
+                <label for="message">Sua mensagem</label>
+                    <textarea type="text" name="message" class="message" id="message" required></textarea>
 
-            <label for="">E-mail</label>
-            <input type="email" id="email">
+                <button type="submit">Enviar</button>
 
-            <label for="">Sua mensagem</label>
-            <input type="text" id="mensagem">
+                <input type="hidden" name="_subject" value="Nova Mensagem!">
+                <input type="text" name="_honey" style="display:none;">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+          
+            <div id="notification">
 
-            <button type="button" id="botao" class="enviar">Enviar</button>
-            <button type="button" id="botao" class="apagar">Apagar</button>
-        </form>
+            </div>
+
+        </section>
+        
     </main>
     
     <footer>
         <p>
-            Desenvolvido por Flávia Gabriella - Todos os Direitos Reservados
+            Desenvolvido por Flávia Carvalho - Todos os Direitos Reservados
         </p>
         <p>
-            <a href="https://instagram.com" target="_blank" title="Instagram">
+            <a href="https://instagram.com/flaviagab_cs" target="_blank" title="Instagram">
                 <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="https://twitter.com" target="_blank" title="Twitter">
+            <a href="https://twitter.com/flaviagab_cs" target="_blank" title="Twitter">
                 <i class="fa-brands fa-twitter"></i>
             </a>
         </p>
     </footer>
 
-    <script>
-        document.getElementById(botao).onclick = function(){
-            var nome = document.getElementById('nome').value;
-            var email = document.getElementById('email').value;
-            var telefone = document.getElementById('mensagem').value;
-
-            if(nome == "" && email == "" && mensagem == ""){
-                alert("Por favor, preencha todos os campos.");
-            }else {
-                if(nome == ""){
-                    alert("Informe seu nome");
-                }
-
-                if(email == ""){
-                    alert("Informe seu e-mail");
-                }
-
-                if(mensagem == ""){
-                    alert("Informe sua mensagem");
-                }
-            }
-            if(nome != "" && email != "" && mensagem != ""){
-                alert("Enviado com sucesso!");
-            }
-        }
-    </script>
-
+   
+    <script src="javascript/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
         function mostrarmenu() {
              $(".header-nav").toggle("mostrar");
         }
     </script>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-     <script>
-        AOS.init();
-      </script>
 </body>
 </html>

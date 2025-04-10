@@ -1,40 +1,63 @@
-h1 {
-    text-align: center;
+* {
+    box-sizing: content-box;
 }
 
-form {
-    display: grid;
-    background-color: rgb(136, 239, 136);
-    padding: 20px;
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container-central {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgb(165, 245, 165);
     color: black;
-    border-radius: 10px;
-    margin: 30px;
+    padding: 20px;
+    box-shadow: 0 0 7px silver;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
 
-    label {
-        margin: 10px
-    }
+.container-central h1 {
+    margin-bottom: 30px;
+}
 
-    .enviar{
-        margin: 10px;
-        display: inline-block;
-        width: 20%;
-        border: none;
-        border-radius: 4px;
-        background-color: green;
-        color: white;
-        padding: 15px 20px;
-        text-transform: uppercase;
-    }
+.container-central form {
+    display: flex;
+    flex-direction: column;
+}
 
-    .apagar {
-        margin: 10px;
-        display: inline-block;
-        width: 20%;
-        border: none;
-        border-radius: 4px;
-        background-color: red;
-        color: white;
-        padding: 15px 20px;
-        text-transform: uppercase;
-    }
+.container-central form input {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.container-central form textarea {
+    min-height: 150px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    padding: 15px;
+
+}
+
+.container-central form button {
+    padding: 15px 20px;
+    margin: 10px auto 0;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #037128;
+    color: white;
+    font-family: "Comfortaa", sans-serif, Arial;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.container-central form button:hover {
+    background-color: #0c391b;
+    color: rgb(0, 255, 17);
 }
