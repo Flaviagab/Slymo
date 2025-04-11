@@ -280,7 +280,7 @@ footer {
         .coluna {
             display: grid;
             justify-content: center;
-            margin-left: 400px;
+            margin-left: 183px;
             margin-right: 0px;
         }
     }
@@ -358,6 +358,7 @@ footer {
 
     main {
         max-width: 100%; 
+        margin-right: auto;
         padding: 10px; 
         justify-content: center; 
         align-items: center; 
@@ -371,7 +372,8 @@ footer {
     }
     
     body {
-        width: 450px;
+       margin-top: 40px;
+       margin-bottom: 200px;
     }
 
     #conteudobanner, #saibasobre {
