@@ -2,11 +2,16 @@ h1 {
     text-align: center;
 }
 h2 {
-    margin: 20px;
+    margin: 60px 20px 20px 20px;
+    font-size: 30px;
 }
 
 .cormoeda {
     height: 450px;
+}
+
+ul {
+    list-style: none;
 }
 
 .fotos {
@@ -46,4 +51,20 @@ h2 {
         box-shadow: 0 0 7px rgb(172, 255, 177);
     }
     
+}
+
+@media (max-width: 850px){
+    img {
+        margin-bottom: 25px;
+    }
+    .fotos {
+        display: block;
+        border: none;
+    }
+    .cormoeda{
+        display: block;
+        border: none;
+        height: 100%;
+    }
+
 }
