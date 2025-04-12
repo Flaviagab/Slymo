@@ -1,14 +1,14 @@
 * {
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 body {
-    max-width: 1440px;
-    margin: 0 auto;
+    width: 100%;
+   
 }
 
 .container-central {
-    max-width: 500px;
+    max-width: 650px;
     margin: 0 auto;
     background-color: rgb(165, 245, 165);
     color: black;
@@ -60,4 +60,10 @@ body {
 .container-central form button:hover {
     background-color: #0c391b;
     color: rgb(0, 255, 17);
+}
+
+@media(max-width: 450px){
+    .container-central{
+        margin: 20px;
+    }
 }

@@ -19,7 +19,5 @@ dataForm.addEventListener("submit", function(event){
 
     dataForm.reset();
 
-  } else {
-    notification.textContent = "Por favor preencha todos os campos"
-  } 
+  }
 })

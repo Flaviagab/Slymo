@@ -20,14 +20,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    background-color: #037128;
-    padding: 15px 20px;
-    text-align: center;
-    margin: 30px 300px 30px 300px;
+   
     .botao {
         text-decoration: none;
         color: white;
+        transition: all 1s;
+        border-radius: 10px;
+        background-color: #037128;
+        padding: 15px 20px;
+        text-align: center;
+        margin: 30px 300px 30px 300px;
+    }
+    .botao:hover{
+        color: rgb(0, 255, 17);
+        background-color: #0c391b;
     }
 }
 

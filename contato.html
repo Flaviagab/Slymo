@@ -31,11 +31,11 @@
         <nav class="header-nav">
             <ul>
                 <li>
-                    <a href="index.html" title="Home">Home</a>
+                    <a href="index.html#" title="Home">Home</a>
                 </li>
 
                 <li>
-                   <a href="sobre.html" title="Sobre">Sobre</a>
+                   <a href="index.html#scroll-sobre" title="Sobre">Sobre</a>
                 </li>
 
                 <li>
@@ -61,23 +61,18 @@
             </h1>
             <form action="" method="POST" id="contact-form">
                 <label for="name">Nome</label>
-                    <input type="text" name="name" class="name" id="name" required>
+                    <input type="text" name="name" class="name" id="name" autocomplete="off" required>
                 
                 <label for="email">E-mail</label>
-                    <input type="email" name="email" class="email" id="email" required>
+                    <input type="email" name="email" class="email" id="email" autocomplete="off" required>
                 
                 <label for="message">Sua mensagem</label>
-                    <textarea type="text" name="message" class="message" id="message" required></textarea>
+                    <textarea type="text" name="message" class="message" id="message" autocomplete="off" required></textarea>
 
                 <button type="submit">Enviar</button>
 
-                <input type="hidden" name="_subject" value="Nova Mensagem!">
-                <input type="text" name="_honey" style="display:none;">
-                <input type="hidden" name="_captcha" value="false">
             </form>
           
-            <div id="notification"></div>
-
         </section>
         
     </main>
