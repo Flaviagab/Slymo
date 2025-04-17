@@ -1,5 +1,4 @@
 const dataForm = document.getElementById("contact-form");
-const notification = document.getElementById("notification")
 
 dataForm.addEventListener("submit", function(event){
     //impedir o envio

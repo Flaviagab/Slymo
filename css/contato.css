@@ -62,8 +62,19 @@ body {
     color: rgb(0, 255, 17);
 }
 
+
+@media(max-width: 850px){
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+
 @media(max-width: 450px){
     .container-central{
         margin: 20px;
+    }
+    footer {
+        position: relative;
     }
 }
